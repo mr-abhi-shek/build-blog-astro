@@ -1,5 +1,5 @@
 ---
-
+const page_title="Home Page"
 ---
 
 <html lang="en">
@@ -8,12 +8,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{page_title}</title>
 	</head>
-	<body>
+	<body style="background:https://docs.astro.build/assets/rose.webp">
 		<a href="/">Home</a>
         <a href="/about/">About</a>
 		<a href="/blog/">Blog</a>
+
+
 	
 		<marquee><h1 style="color:blueviolet; font-family: 'Times New Roman', Times, serif;">Astro Website</h1></marquee>
 
