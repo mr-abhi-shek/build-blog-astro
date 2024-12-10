@@ -1,5 +1,7 @@
 ---
-
+import '../pages/styles/global.css';
+import Navigations from '../components/Navigations.astro';
+import Footer from '../components/Footer.astro';
 const page_title="About Page"
 ---
 
@@ -12,16 +14,18 @@ const page_title="About Page"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{page_title}</title>
+	
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Navigations />
+
         
 		
 		<center><h1 style="color:blueviolet; font-family:monospace;">Astro Website About Section</h1></center>
         <p>Hii<br>This is the about page of our astro build blog.</p>
         <p>I am learning the Astro framework for web development.<br>This Page will be upadted shortly.</p>
+
+		<Footer />
 
 	</body>
 </html>

@@ -1,4 +1,8 @@
 ---
+import '../pages/styles/global.css';
+import Navigations from '../components/Navigations.astro';
+import Footer from '../components/Footer.astro';
+
 const page_title="Home Page"
 ---
 
@@ -11,13 +15,13 @@ const page_title="Home Page"
 		<title>{page_title}</title>
 	</head>
 	<body style="background:https://docs.astro.build/assets/rose.webp">
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Navigations />
 
 
 	
-		<marquee><h1 style="color:blueviolet; font-family: 'Times New Roman', Times, serif;">Astro Website</h1></marquee>
+		<center><h1>Astro Website</h1></center>
 
+		<Footer />
+		</body>
 	</body>
 </html>
